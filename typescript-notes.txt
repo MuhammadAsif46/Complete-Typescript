@@ -15,5 +15,13 @@ Types:
 
 
 Syntax:
+    Variable :
+        let variableName: type = value
 
-    let variableName: type = value
+    Function :
+        function name(params:type):type {
+
+        }
+        name(params)
+
+
