@@ -35,4 +35,4 @@ console.log(upperCase.toUpperCase());
 let lowerCase:string = "WORLD HELLO"
 console.log(lowerCase.toLowerCase());
 
-
+export{}
