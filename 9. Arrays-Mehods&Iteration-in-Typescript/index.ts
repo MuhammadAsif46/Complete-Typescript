@@ -20,5 +20,21 @@ console.log(fruits);
 such as for, for...of, or array methods like forEach */
 
 // Using for loop
+
+for (let i = 0; i < fruits.length; i++) {
+    const element = fruits[i];
+    console.log(element);
+}
+
 // Using for...of loop
+
+for (const ele of fruits) {
+    console.log("for.of ele->", ele);    
+}
+// Using for...in loop
+for (const ele in fruits) {
+    console.log("for.in ele->",ele);    
+}
 // Using forEach method
+
+fruits.forEach(eachFruit => console.log("for Each result->",eachFruit));
