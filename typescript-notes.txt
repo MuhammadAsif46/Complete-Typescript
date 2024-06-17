@@ -1,18 +1,24 @@
-Types:
+Types in Typescript:
 
-    1. Number
-    2. String
-    3. Boolean
-    4. Null 
-    5. Undefined
-    6. Void
-    7. Object
-    8. Array
-    9. Tuples
-    10. Any    --- Not use 
-    11. Never
-    12. Unknown
-
+    1. Unknown
+    2. Undefined
+    3. Void
+    4. Any
+    5. Null
+    6. Number
+    7. Biglnt
+    8. Boolean
+    9. String
+    10. Symbol
+    11. Object
+    12. Number Enum
+    13. String Enum
+    14. Unique Symbol
+    15. Array
+    16. Function
+    17. Tuples
+    18. Constuctor
+    19. Never
 
 Syntax:
     Variable :
@@ -20,8 +26,6 @@ Syntax:
 
     Function :
         function name(params:type):type {
-
+            console.log(variableName)
         }
-        name(params)
-
-
+    name(params)
