@@ -19,4 +19,12 @@ console.log(numberToString);
 // Filter Method:
 
 // 1. Filtering even number.
+
+const evenNumber:number[] = numbers.filter((val:number) => val % 2 === 0);
+console.log(evenNumber);
+
+
 // 2. Filtering number greater than 3.
+
+const greaterToThree:number[] = numbers.filter((val:number) => val > 3 );
+console.log(greaterToThree);

@@ -9,4 +9,8 @@ var numberToString = numbers.map(function (val) { return val.toString(); });
 console.log(numberToString);
 // Filter Method:
 // 1. Filtering even number.
+var evenNumber = numbers.filter(function (val) { return val % 2 === 0; });
+console.log(evenNumber);
 // 2. Filtering number greater than 3.
+var greaterToThree = numbers.filter(function (val) { return val > 3; });
+console.log(greaterToThree);
