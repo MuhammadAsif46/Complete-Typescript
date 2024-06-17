@@ -19,5 +19,3 @@ console.log(isLoggedIn);
 
 // Adding `export {}` makes this file a module, avoiding global scope issues.
 export {}
-
-

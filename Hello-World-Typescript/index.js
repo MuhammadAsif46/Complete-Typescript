@@ -1,4 +1,6 @@
+"use strict";
 // primitive Types:
+Object.defineProperty(exports, "__esModule", { value: true });
 // 1. String:
 var greetings = "Hello, world!";
 greetings.toLowerCase();
