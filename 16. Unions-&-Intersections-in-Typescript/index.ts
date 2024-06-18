@@ -60,3 +60,40 @@ const person: Person = {
   name: "Jhon",
   age: 30,
 };
+
+// Practice: Create a User Profile:
+/* You are given two Typescript types: Usre and Mylocation. The user type represents 
+basic user information, while the mylocation type contains details about the user's location. 
+create a function called createUserProfile that takes a user object as arguments and prints 
+the user's name and the city they are from. */
+
+type User = {
+  name: string;
+  age: number;
+};
+
+type MyLocation = {
+  city: string;
+  country: string;
+};
+
+const user: User = {
+  name: "John",
+  age: 34,
+};
+
+const address: MyLocation = {
+  city: "Lahore",
+  country: "Pakistan",
+};
+
+// type UserProfile = User & MyLocation;
+
+const createUserProfile = (user: User, address:MyLocation) => {
+  return {...user, ...address}
+  // return `My name is ${user.name} and I am living in city: ${address.city}`;
+};
+
+const userCompleteInfo: User & MyLocation =  createUserProfile(user, address);
+// console.log(userCompleteInfo); // all data retrieve.
+console.log(`My name is ${userCompleteInfo.name} and I am living in city: ${userCompleteInfo.city}`);
