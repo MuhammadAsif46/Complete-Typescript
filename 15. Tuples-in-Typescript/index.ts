@@ -8,12 +8,19 @@ appropriate choice because these three elements have a specific order and type. 
 // const arr = ["pakistan","india","bangladesh","srilanka","china"];
 
 // Defining a tuple type for person information:
-type PersonInfo = [string, number, boolean];
+type PersonInfo = readonly [string, number, boolean];
 
 // Example usage:
 // const person1:PersonInfo = [21,"Jhon",false] // type error in tuple but array is not checking.
 const person1: PersonInfo = ["Jhon", 21, true];
 const person2: PersonInfo = ["Elia", 28, false];
+
+/* "You can use arrays for this task, but you have to avoid doing this with tuples.
+ This is why we have a readonly property that TypeScript provides. We define it for this reason.*/
+
+// person1.push("coding");
+// console.log(person1);
+
 
 // Function to display person information:
 const displayPersonInfo = (person: PersonInfo) => {
