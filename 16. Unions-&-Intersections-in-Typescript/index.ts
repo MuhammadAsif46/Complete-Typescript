@@ -28,3 +28,35 @@ console.log(userInput(8));
 console.log(userInput("video"));
 
 // Intersection symbol in Typescipt represent & (ampersand):
+
+/* Intersection types allow you to combine multiple types into a single type. 
+you use the & (ampersand) to define an intersection type. */
+
+// define type Alias:
+type Person = {
+  name: string;
+  age: number;
+};
+
+// define type Alias:
+type Employee = {
+  emp_id: number;
+  department: string;
+};
+
+type EmployeeDetails = Person & Employee;
+
+// company example :
+const employee: EmployeeDetails = {
+  name: "Jhon",
+  age: 30,
+  emp_id: 123,
+  department: "IT",
+};
+
+// house example:
+
+const person: Person = {
+  name: "Jhon",
+  age: 30,
+};

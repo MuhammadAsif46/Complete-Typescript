@@ -22,4 +22,15 @@ var userInput = function (value) {
 // func call:
 console.log(userInput(8));
 console.log(userInput("video"));
-// Intersection symbol in Typescipt represent & (ampersand):
+// company example :
+var employee = {
+    name: "Jhon",
+    age: 30,
+    emp_id: 123,
+    department: "IT",
+};
+// house example:
+var person = {
+    name: "Jhon",
+    age: 30,
+};
