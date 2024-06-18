@@ -25,4 +25,3 @@ console.log(numberRes);
 console.log(stringRes);
 console.log(booleanRes);
 
-
