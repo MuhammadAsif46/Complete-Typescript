@@ -18,3 +18,11 @@ var booleanRes = generics(true);
 console.log(numberRes);
 console.log(stringRes);
 console.log(booleanRes);
+// Generics multiple type variables:
+var multipleGenerics = function (a, b, c) {
+    console.log(typeof a);
+    console.log(typeof b);
+    // console.log(typeof c);
+};
+var multipleNumberRes = multipleGenerics(26, "Jhon", true);
+var multipleStringRes = multipleGenerics("hello", 6, false);

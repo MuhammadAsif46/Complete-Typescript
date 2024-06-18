@@ -10,9 +10,8 @@
 // const stringRes = generics("hello, Generics!");
 // const booleanRes = generics(true);
 
-
 // Genertics function to return a input value:
-const generics = <G>(value:G):G => {
+const generics = <G>(value: G): G => {
   return value;
 };
 
@@ -25,3 +24,13 @@ console.log(numberRes);
 console.log(stringRes);
 console.log(booleanRes);
 
+// Generics multiple type variables:
+
+const multipleGenerics = <G, M>(a: G, b: M, c: boolean) => {
+  console.log(typeof a);
+  console.log(typeof b);
+  // console.log(typeof c);
+};
+
+const multipleNumberRes = multipleGenerics<number, string>(26, "Jhon", true);
+const multipleStringRes = multipleGenerics<string, number>("hello", 6, false);
